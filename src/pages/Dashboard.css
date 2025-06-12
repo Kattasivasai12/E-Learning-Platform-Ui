@@ -1,0 +1,95 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6fb;
+  color: #1e293b;
+}
+
+.dashboard-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.dashboard-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+/* Course Section */
+.dashboard-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Course Cards */
+.dashboard-course-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dashboard-course-card:hover {
+  transform: translateY(-3px);
+}
+
+.dashboard-course-card img {
+  width: 110px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Text */
+.dashboard-course-card h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+  color: #1e293b;
+}
+
+.dashboard-course-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Progress bar */
+.progress-bar-container {
+  width: 100%;
+  height: 10px;
+  background-color: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  transition: width 0.4s ease-in-out;
+  background-color: #3b82f6; /* Blue */
+}
+
+/* For completed courses */
+.progress-bar-fill.complete {
+  background-color: #10b981; /* Green */
+}

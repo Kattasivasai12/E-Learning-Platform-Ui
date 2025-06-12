@@ -1,0 +1,49 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f6f7fb;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: #282c34;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Make sure page containers use the available space */
+.page-container, .course-list-container, .dashboard-container, .course-detail-container {
+  width: 100vw;
+  min-height: calc(100vh - 64px); /* Adjust based on navbar height */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2rem 2vw;
+}
